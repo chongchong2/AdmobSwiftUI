@@ -20,7 +20,7 @@ class NativeLargeAdBannerView: GADNativeAdView {
     let bodyLabel = UILabel(text: "", font: .systemFont(ofSize: 14, weight: .regular), textColor: .secondaryLabel, numberOfLines: 3)
     
     // for app
-    let callToActionButton = UIButton(title: "", titleColor: .label, font: .boldSystemFont(ofSize: 14), backgroundColor: .systemBlue, target: nil, action: nil)
+    let callToActionButton = UIButton(title: "", titleColor: .white, font: .boldSystemFont(ofSize: 14), backgroundColor: .systemBlue, target: nil, action: nil)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
