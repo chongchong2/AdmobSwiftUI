@@ -1,0 +1,3 @@
+## 2024-05-18 - Ad Tag Pronunciation and Rating Accessibility
+**Learning:** Screen readers often mispronounce short UI badges like "AD" as "add", causing confusion for users. Additionally, standard `UIImageView` components are ignored by VoiceOver by default, leaving visual rating indicators (e.g., star images) inaccessible.
+**Action:** Always provide explicit, unabbreviated `accessibilityLabel`s for badge abbreviations (e.g., "Advertisement" for "AD"). For dynamically rendered visual indicators like star ratings using images, explicitly set `isAccessibilityElement = true` and provide an `accessibilityLabel` based on the underlying value.
