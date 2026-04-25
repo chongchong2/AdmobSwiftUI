@@ -64,6 +64,10 @@ public struct NativeAdView: UIViewRepresentable {
         let starRattingImage = imageOfStars(from: nativeAd.starRating)
         (nativeAdView.starRatingView as? UIImageView)?.image = starRattingImage
         nativeAdView.starRatingView?.isHidden = (starRattingImage == nil)
+        if let starRatingView = nativeAdView.starRatingView as? UIImageView, let rating = nativeAd.starRating?.doubleValue {
+            starRatingView.isAccessibilityElement = true
+            starRatingView.accessibilityLabel = String(format: NSLocalizedString("%.1f stars", bundle: .module, comment: "Accessibility label for star rating"), rating)
+        }
         
         // store
         (nativeAdView.storeView as? UILabel)?.text = nativeAd.store
