@@ -1,0 +1,3 @@
+## 2024-05-18 - VoiceOver Support for Custom Visual Ad Elements
+**Learning:** Custom visual indicators, such as abbreviation tags (like "AD") and star rating images in native ads, are inherently non-accessible to screen readers because they either mispronounce abbreviations ("A D") or simply skip purely visual image elements.
+**Action:** Always set `isAccessibilityElement = true` and provide a localized, descriptive `accessibilityLabel` (e.g., "Advertisement" for "AD" tags, or "X.X out of 5 stars" for star ratings) to ensure VoiceOver provides contextually meaningful information for these elements.
