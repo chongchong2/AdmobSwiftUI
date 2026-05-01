@@ -1,0 +1,3 @@
+## 2024-03-21 - Improve VoiceOver pronunciation for abbreviated AD badges
+**Learning:** VoiceOver screen readers often mispronounce acronyms or abbreviations if not given context (e.g., reading "AD" as "add"). It is essential to provide full-word `accessibilityLabel` strings (like "Advertisement") for such badges to ensure proper pronunciation.
+**Action:** Always verify how an abbreviation or acronym is read out by the screen reader. If it creates confusion, provide a clear, full-word `accessibilityLabel` that explicitly describes the element's meaning.
