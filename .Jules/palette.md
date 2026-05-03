@@ -1,0 +1,3 @@
+## 2023-10-27 - VoiceOver pronunciation of Abbreviated Badges
+**Learning:** VoiceOver screen readers often mispronounce all-caps short abbreviations in badges (like reading the "AD" badge as "add" or "A-D", instead of "Advertisement"). This can cause confusion for visually impaired users interacting with Native Ads, masking the true context of the element.
+**Action:** Always provide full-word `accessibilityLabel` strings (e.g. "Advertisement") with `isAccessibilityElement = true` for UI elements that contain acronyms or abbreviations, especially badges, to ensure clear screen reader pronunciation.
