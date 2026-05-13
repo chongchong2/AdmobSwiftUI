@@ -1,0 +1,3 @@
+## 2024-03-21 - Screen Reader Pronunciation of Abbreviated UI Tags
+**Learning:** VoiceOver and other screen readers will often spell out capitalized abbreviations like "AD" (reading it as "A-D"). This provides a poor, confusing experience for visually impaired users who are expecting to hear whether something is an advertisement.
+**Action:** When adding abbreviated UI text tags or badges (like "AD", "PRO", etc.), always add a full-word `accessibilityLabel` (e.g., `adTag.accessibilityLabel = NSLocalizedString("Advertisement", ...)`). This ensures the screen reader pronounces the full word correctly.
