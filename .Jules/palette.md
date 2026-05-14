@@ -1,0 +1,3 @@
+## 2024-05-18 - Full Word Accessibility Labels for Abbreviations
+**Learning:** Screen readers (like VoiceOver) often spell out capitalized short words or abbreviations (like "AD") letter by letter (A-D) instead of pronouncing the intended word.
+**Action:** When adding accessibility to abbreviated UI elements or badges, always provide the full word in `accessibilityLabel` (e.g., `accessibilityLabel = NSLocalizedString("Advertisement", ...)` for an 'AD' badge) to ensure natural and correct pronunciation for visually impaired users.
