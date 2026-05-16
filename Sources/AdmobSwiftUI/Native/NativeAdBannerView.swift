@@ -11,7 +11,12 @@ import LBTATools
 
 class NativeAdBannerView: GADNativeAdView {
     
-    let adTag: UILabel = UILabel(text: "AD", font: .systemFont(ofSize: 11, weight: .semibold), textColor: .white, textAlignment: .center)
+    let adTag: UILabel = {
+        let label = UILabel(text: NSLocalizedString("AD", bundle: .module, comment: "Ad tag label"), font: .systemFont(ofSize: 11, weight: .semibold), textColor: .white, textAlignment: .center)
+        label.isAccessibilityElement = true
+        label.accessibilityLabel = NSLocalizedString("Advertisement", bundle: .module, comment: "Accessibility label for ad tag")
+        return label
+    }()
     let headlineLabel = UILabel(text: "", font: .systemFont(ofSize: 15, weight: .medium), textColor: .label)
     let iconImageView = UIImageView()
     let bodyLabel = UILabel(text: "", font: .systemFont(ofSize: 14, weight: .regular), textColor: .secondaryLabel)
