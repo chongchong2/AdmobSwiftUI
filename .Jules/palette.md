@@ -1,0 +1,3 @@
+## 2026-05-19 - Screen Reader Pronunciation of Abbreviated UI Badges
+**Learning:** VoiceOver and other screen readers often mispronounce short UI badges like "AD" (reading it as the word "add" instead of the letters A-D or the full word "Advertisement"). For iOS accessibility, setting an explicit, full-word `accessibilityLabel` is crucial to ensure clear and correct pronunciation, even if the visual label is an abbreviation.
+**Action:** Always verify how abbreviations and short badges are pronounced by screen readers, and provide full-word `accessibilityLabel` strings (e.g., 'Advertisement' for 'AD') for clarity. When localizing within Swift packages, always use `NSLocalizedString` with `bundle: .module`.
