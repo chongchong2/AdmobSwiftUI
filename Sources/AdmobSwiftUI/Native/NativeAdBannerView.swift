@@ -31,6 +31,9 @@ class NativeAdBannerView: GADNativeAdView {
         adTag.backgroundColor = .orange
         adTag.layer.cornerRadius = 2
         adTag.clipsToBounds = true
+        adTag.text = NSLocalizedString("AD", bundle: .module, comment: "Ad tag label")
+        adTag.isAccessibilityElement = true
+        adTag.accessibilityLabel = NSLocalizedString("Advertisement", bundle: .module, comment: "Accessibility label for ad badge")
         
         // config 1:1
         iconImageView.heightAnchor.constraint(equalTo: iconImageView.widthAnchor, multiplier: 1).isActive = true
