@@ -1,0 +1,3 @@
+## 2024-05-18 - Improve iOS VoiceOver accessibility for abbreviated badges
+**Learning:** VoiceOver reads out abbreviations (like "AD" for Advertisement) literally as "A D", which can be confusing. Using a full-word `accessibilityLabel` string for abbreviated UI elements or badges is required to ensure proper screen reader pronunciation.
+**Action:** Always provide full-word `accessibilityLabel` strings for abbreviated UI elements or badges (e.g., use 'Advertisement' for 'AD' badges) to ensure proper screen reader pronunciation. When localizing in AdmobSwiftUI, remember to use `NSLocalizedString(..., bundle: .module, ...)` to ensure correct resolution within the Swift package.
