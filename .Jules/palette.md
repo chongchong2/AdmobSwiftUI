@@ -1,0 +1,3 @@
+## 2024-05-24 - [VoiceOver Abbreviation Expansion for Ad Badges]
+**Learning:** Screen readers like VoiceOver can struggle to properly pronounce short abbreviations such as "AD" in UI components, sometimes reading them incorrectly as full words (e.g., "add") instead of spelling them out.
+**Action:** When creating abbreviated tags or badges in iOS (especially custom labels like `adTag` in `GADNativeAdView`), set `isAccessibilityElement = true` and provide a full-word `accessibilityLabel` (e.g., "Advertisement") via `NSLocalizedString` to ensure proper pronunciation.
