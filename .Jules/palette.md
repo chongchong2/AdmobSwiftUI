@@ -1,0 +1,3 @@
+## 2026-05-31 - Native iOS Accessibility for Abbreviated Badges
+**Learning:** When adding accessibility to native iOS components like UI labels that display abbreviated text (e.g., 'AD' for advertisement), VoiceOver will spell out the letters by default. It's critical to set `isAccessibilityElement = true` and provide a full-word `accessibilityLabel` (e.g., 'Advertisement') so screen readers pronounce it correctly and naturally for the user.
+**Action:** Always verify how short, abbreviated UI badges sound on VoiceOver and explicitly define full-word `accessibilityLabel`s for them using `NSLocalizedString` when appropriate.
