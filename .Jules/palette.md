@@ -1,0 +1,3 @@
+## 2024-06-01 - Proper Localization for Hidden Accessibility Strings
+**Learning:** Even though `accessibilityLabel` strings are only read by screen readers (like VoiceOver) and never displayed visually on screen, they still MUST be wrapped in `NSLocalizedString` in production codebases so that visually impaired users receive auditory announcements in their native language. Hardcoding English accessibility labels in a multi-lingual app creates a broken UX for non-English speakers.
+**Action:** Always wrap `accessibilityLabel`, `accessibilityHint`, and `accessibilityValue` strings in localization macros (e.g., `NSLocalizedString`) identical to how visible UI text is handled.
