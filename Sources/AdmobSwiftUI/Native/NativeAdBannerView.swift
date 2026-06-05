@@ -11,7 +11,7 @@ import LBTATools
 
 class NativeAdBannerView: GADNativeAdView {
     
-    let adTag: UILabel = UILabel(text: "AD", font: .systemFont(ofSize: 11, weight: .semibold), textColor: .white, textAlignment: .center)
+    let adTag: UILabel = UILabel(text: NSLocalizedString("AD", bundle: .module, comment: "Ad tag label"), font: .systemFont(ofSize: 11, weight: .semibold), textColor: .white, textAlignment: .center)
     let headlineLabel = UILabel(text: "", font: .systemFont(ofSize: 15, weight: .medium), textColor: .label)
     let iconImageView = UIImageView()
     let bodyLabel = UILabel(text: "", font: .systemFont(ofSize: 14, weight: .regular), textColor: .secondaryLabel)
@@ -31,6 +31,7 @@ class NativeAdBannerView: GADNativeAdView {
         adTag.backgroundColor = .orange
         adTag.layer.cornerRadius = 2
         adTag.clipsToBounds = true
+        adTag.accessibilityLabel = NSLocalizedString("Advertisement", bundle: .module, comment: "Accessibility label for ad tag")
         
         // config 1:1
         iconImageView.heightAnchor.constraint(equalTo: iconImageView.widthAnchor, multiplier: 1).isActive = true
