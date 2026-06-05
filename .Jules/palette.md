@@ -1,0 +1,3 @@
+## 2024-05-24 - VoiceOver Abbreviations for Badges
+**Learning:** When using abbreviated text for UI badges (like "AD" for Advertisement), VoiceOver may read the letters individually instead of the intended word. The native iOS pattern is to assign a full-word string to `accessibilityLabel`.
+**Action:** Always provide full-word, localized `accessibilityLabel` strings (wrapped in `NSLocalizedString` for packages) for abbreviated UI elements to ensure proper screen reader pronunciation.
