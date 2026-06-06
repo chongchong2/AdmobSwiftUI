@@ -28,6 +28,9 @@ class NativeAdBannerView: GADNativeAdView {
         self.bodyView = bodyLabel
         
         adTag.withWidth(20)
+        adTag.text = NSLocalizedString("AD", bundle: .module, comment: "Ad tag label")
+        adTag.isAccessibilityElement = true
+        adTag.accessibilityLabel = NSLocalizedString("Advertisement", bundle: .module, comment: "Accessibility label for ad tag")
         adTag.backgroundColor = .orange
         adTag.layer.cornerRadius = 2
         adTag.clipsToBounds = true

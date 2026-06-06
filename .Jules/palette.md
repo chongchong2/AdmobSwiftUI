@@ -1,0 +1,3 @@
+## 2024-05-18 - Improve VoiceOver readability for "AD" Badges
+**Learning:** VoiceOver often misreads short abbreviations like "AD" (e.g. spelling it out as A-D or pronouncing it oddly). Furthermore, UI elements like "AD" badges need robust accessibility labels that are both unabbreviated ("Advertisement") AND correctly localized using the current package's bundle (`NSLocalizedString("Advertisement", bundle: .module, ...)`), rather than assuming standard system localization.
+**Action:** When adding accessibility to abbreviation badges in Swift packages, always provide a full-word `accessibilityLabel` and wrap it in `NSLocalizedString` using `bundle: .module`.
