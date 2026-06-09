@@ -1,0 +1,3 @@
+## 2024-05-14 - VoiceOver Pronunciation of Acronyms
+**Learning:** Screen readers like VoiceOver can mispronounce short UI acronyms. For example, a badge labeled "AD" might be read out phonetically instead of conceptually as "Advertisement". It is critical to provide a full-word string for `accessibilityLabel` when using visual abbreviations. Furthermore, this label must also be localized (e.g., using `NSLocalizedString`) to support accessibility for users of other languages.
+**Action:** When adding labels to visually abbreviated UI elements (like "AD", "VIP", etc.), always check if VoiceOver will pronounce them properly. If not, provide a full-word `accessibilityLabel` wrapped in localization to ensure proper conceptual and linguistic understanding.
