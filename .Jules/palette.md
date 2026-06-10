@@ -1,0 +1,3 @@
+## 2024-06-10 - Provide full VoiceOver pronunciations for abbreviation badges
+**Learning:** Abbreviated visual badges like "AD" can cause confusion for screen reader users since they might be spelled out "A-D" or pronounced improperly. By defining `accessibilityLabel` with fully spelled out localized terms like "Advertisement" in standard UIKit wrapper components (`UIViewRepresentable`), VoiceOver accessibility increases.
+**Action:** When creating abbreviated UI elements or badges, always use the `accessibilityLabel` parameter to provide fully expanded terms and wrap them in `NSLocalizedString("Full Term", bundle: .module, ...)` for localization, even if the text itself is an abbreviation.
