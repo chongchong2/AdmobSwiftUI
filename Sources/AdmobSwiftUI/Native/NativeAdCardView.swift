@@ -58,6 +58,8 @@ class NativeAdCardView: GADNativeAdView {
         adTag.layer.cornerRadius = 2
         adTag.clipsToBounds = true
         adTag.text = NSLocalizedString("AD", bundle: .module, comment: "Ad tag label")
+        adTag.isAccessibilityElement = true
+        adTag.accessibilityLabel = NSLocalizedString("Advertisement", bundle: .module, comment: "Advertisement accessibility label")
         
         // avoid star width to long add space view
         let starRattingStack = hstack(adTag, starRatingImageView, advertiserLabel, UIView(), spacing: 4)
