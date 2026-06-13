@@ -1,0 +1,3 @@
+## 2024-05-18 - VoiceOver specific labels for abbreviated UI text
+**Learning:** Short abbreviated UI texts like "AD" are often mispronounced or confusing for VoiceOver users, treating them as individual letters or unrelated words.
+**Action:** When an abbreviated UI element like an "AD" badge exists, always expand it to a full word (e.g., "Advertisement") via `accessibilityLabel` so screen readers pronounce it correctly, while still using `NSLocalizedString` for proper multi-language support.
