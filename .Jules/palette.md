@@ -1,0 +1,3 @@
+## 2026-06-15 - [Accessibility] Improve VoiceOver pronunciation for AD badges
+**Learning:** For iOS accessibility on VoiceOver, always provide full-word `accessibilityLabel` strings for abbreviated UI elements or badges (e.g., use 'Advertisement' for 'AD' badges) to ensure proper screen reader pronunciation. Even these full-word accessibility labels must be wrapped in `NSLocalizedString` for proper localization.
+**Action:** When adding abbreviated badges like "AD", "VIP", etc., always remember to apply `.isAccessibilityElement = true` and `.accessibilityLabel = NSLocalizedString("[Full Word]", bundle: .module, comment: "...")`.
