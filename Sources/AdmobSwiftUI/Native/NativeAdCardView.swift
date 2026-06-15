@@ -28,6 +28,9 @@ class NativeAdCardView: GADNativeAdView {
     func setupViews() {
         self.headlineView = headlineLabel
         
+        adTag.isAccessibilityElement = true
+        adTag.accessibilityLabel = NSLocalizedString("Advertisement", bundle: .module, comment: "Ad tag accessibility label")
+
         self.advertiserView = advertiserLabel
         
         myMediaView.translatesAutoresizingMaskIntoConstraints = false

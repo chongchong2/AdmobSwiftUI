@@ -36,6 +36,10 @@ class NativeLargeAdBannerView: GADNativeAdView {
         self.mediaView = myMediaView
 
         self.headlineView = headlineLabel
+
+        adTag.isAccessibilityElement = true
+        adTag.accessibilityLabel = NSLocalizedString("Advertisement", bundle: .module, comment: "Ad tag accessibility label")
+
         self.advertiserView = advertiserLabel
         self.bodyView = bodyLabel
         
