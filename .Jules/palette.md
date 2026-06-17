@@ -1,0 +1,3 @@
+## 2026-06-17 - Native App VoiceOver Labels for Abbreviations
+**Learning:** For iOS accessibility using VoiceOver, abbreviated UI elements or badges (like "AD" for Advertisement) must have full-word `accessibilityLabel` properties (e.g., "Advertisement") so the screen reader pronounces them correctly. Even these full-word accessibility labels must be wrapped in `NSLocalizedString` to ensure they are properly localized in different languages.
+**Action:** Whenever adding abbreviated text tags or badges to a UI, immediately add `isAccessibilityElement = true` and an `accessibilityLabel` with the full, localized expansion of that abbreviation.
