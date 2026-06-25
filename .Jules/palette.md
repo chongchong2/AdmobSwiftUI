@@ -1,0 +1,3 @@
+## 2024-05-18 - VoiceOver Mispronunciation of Ad Badges
+**Learning:** VoiceOver screen readers often mispronounce abbreviated badges (like reading "AD" as the word "ad" instead of the letters A-D, or lacking context), providing an ambiguous experience for visually impaired users encountering custom native ad layouts.
+**Action:** Always override the default accessibility label on "AD" badges across custom NativeAdViews with a full descriptive word like `NSLocalizedString("Advertisement", bundle: .module, comment: "Ad tag accessibility label")` to ensure VoiceOver users are clearly notified of ad content.
