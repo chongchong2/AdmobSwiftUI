@@ -11,7 +11,7 @@ import LBTATools
 
 class NativeAdCardView: GADNativeAdView {
     
-    let adTag: UILabel = UILabel(text: "AD", font: .systemFont(ofSize: 10, weight: .semibold), textColor: .white)
+    let adTag: UILabel = UILabel(text: NSLocalizedString("AD", bundle: .module, comment: "Ad tag label"), font: .systemFont(ofSize: 10, weight: .semibold), textColor: .white)
     let headlineLabel = UILabel(text: "", font: .systemFont(ofSize: 17, weight: .medium), textColor: .label)
     let myMediaView = GADMediaView()
     let callToActionButton = UIButton(title: "", titleColor: .white, font: .boldSystemFont(ofSize: 18), backgroundColor: UIColor(hex: "#3871E0"), target: nil, action: nil)
@@ -58,6 +58,8 @@ class NativeAdCardView: GADNativeAdView {
         adTag.layer.cornerRadius = 2
         adTag.clipsToBounds = true
         adTag.text = NSLocalizedString("AD", bundle: .module, comment: "Ad tag label")
+        adTag.isAccessibilityElement = true
+        adTag.accessibilityLabel = NSLocalizedString("Advertisement", bundle: .module, comment: "Accessibility label for ad tag")
         
         // avoid star width to long add space view
         let starRattingStack = hstack(adTag, starRatingImageView, advertiserLabel, UIView(), spacing: 4)
