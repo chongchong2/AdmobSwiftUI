@@ -13,7 +13,7 @@ class NativeLargeAdBannerView: GADNativeAdView {
     // require
     let myMediaView = GADMediaView()
     let headlineLabel = UILabel(text: "", font: .systemFont(ofSize: 15, weight: .medium), textColor: .label, numberOfLines: 2)
-    let adTag: UILabel = UILabel(text: "AD", font: .systemFont(ofSize: 10, weight: .semibold), textColor: .secondaryLabel, textAlignment: .center)
+    let adTag: UILabel = UILabel(text: NSLocalizedString("AD", bundle: .module, comment: "Ad tag label"), font: .systemFont(ofSize: 10, weight: .semibold), textColor: .secondaryLabel, textAlignment: .center)
     
     // for web
     let advertiserLabel = UILabel(text: "", font: .systemFont(ofSize: 14, weight: .regular), textColor: .secondaryLabel, numberOfLines: 1)
@@ -62,6 +62,8 @@ class NativeLargeAdBannerView: GADNativeAdView {
         adTag.layer.cornerRadius = 4
         adTag.clipsToBounds = true
         adTag.text = NSLocalizedString("AD", bundle: .module, comment: "Ad tag label")
+        adTag.isAccessibilityElement = true
+        adTag.accessibilityLabel = NSLocalizedString("Advertisement", bundle: .module, comment: "Accessibility label for ad tag")
     }
     
     required init?(coder aDecoder: NSCoder) {
