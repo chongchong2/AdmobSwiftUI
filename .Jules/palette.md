@@ -1,0 +1,3 @@
+## 2024-05-17 - Full-word Screen Reader Pronunciation for Abbreviated Badges
+**Learning:** Screen readers (VoiceOver) pronounce abbreviated UI elements or badges (like "AD" for advertisement) exactly as written, which can sound confusing or unclear to users relying on assistive technology. Adding an explicit, full-word `accessibilityLabel` (e.g., "Advertisement") significantly improves comprehension.
+**Action:** Always provide full-word `accessibilityLabel` strings for abbreviated UI elements or badges. In a Swift package context, remember to wrap these strings in `NSLocalizedString` with `bundle: .module` to ensure they are properly localizable.
