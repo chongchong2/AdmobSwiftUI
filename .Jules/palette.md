@@ -1,0 +1,3 @@
+## 2024-10-25 - VoiceOver Pronunciation for Abbreviated Badges
+**Learning:** Screen readers often mispronounce abbreviated badges (like reading "AD" as the word "add" or "A D"). This is an accessibility issue pattern across our native ad components.
+**Action:** Always provide a full-word `accessibilityLabel` (e.g., "Advertisement") for abbreviated UI elements or badges, and ensure the full word is wrapped in `NSLocalizedString` for proper localization.
