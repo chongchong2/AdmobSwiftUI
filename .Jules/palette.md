@@ -1,0 +1,3 @@
+## 2024-07-26 - [Full-word accessibility labels for VoiceOver]
+**Learning:** [Abbreviated UI elements like 'AD' badges are pronounced incorrectly or spelled out by VoiceOver. They require a full-word `accessibilityLabel` wrapped in `NSLocalizedString` for correct pronunciation across languages.]
+**Action:** [Always expand visual abbreviations to their full-word equivalent (e.g., 'Advertisement') in `accessibilityLabel` properties to improve screen reader experience.]
