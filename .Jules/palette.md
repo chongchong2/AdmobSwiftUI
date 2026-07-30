@@ -1,0 +1,3 @@
+## 2024-06-15 - Abbreviated badges for screen readers
+**Learning:** Screen readers often mispronounce short abbreviated UI badges like "AD" (reading it as individual letters "A D" or confusing it with word forms). This codebase uses an `adTag` across native ad views.
+**Action:** Always apply a full-word `accessibilityLabel` (e.g., "Advertisement") wrapped in `NSLocalizedString` for abbreviated UI badges to ensure proper VoiceOver pronunciation.
