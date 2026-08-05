@@ -1,0 +1,3 @@
+## 2024-05-15 - Full-word Accessibility Labels for Abbreviated Badges
+**Learning:** For iOS VoiceOver, abbreviated UI elements or badges (like "AD" for Advertisement) require full-word `accessibilityLabel` strings to ensure proper screen reader pronunciation.
+**Action:** Always provide and localize full-word strings (e.g., "Advertisement") via `NSLocalizedString` for the `accessibilityLabel` of abbreviated visual badges.
