@@ -57,6 +57,8 @@ class NativeAdCardView: GADNativeAdView {
         adTag.backgroundColor = .orange
         adTag.layer.cornerRadius = 2
         adTag.clipsToBounds = true
+        adTag.isAccessibilityElement = true
+        adTag.accessibilityLabel = NSLocalizedString("Advertisement", bundle: .module, comment: "Accessibility label for Ad tag")
         adTag.text = NSLocalizedString("AD", bundle: .module, comment: "Ad tag label")
         
         // avoid star width to long add space view
