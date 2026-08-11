@@ -1,0 +1,3 @@
+## 2024-05-24 - Screen Reader Pronunciation for Abbreviated Badges
+**Learning:** Screen readers (VoiceOver) pronounce capitalized abbreviations like "AD" awkwardly. This is a prevalent accessibility issue in ad-related UI components where space constraints force the use of acronyms/abbreviations.
+**Action:** Always provide full-word `accessibilityLabel` strings (e.g., "Advertisement") for abbreviated badges to ensure proper screen reader pronunciation. Ensure these accessibility strings are fully localized using `NSLocalizedString` even if the visible text is abbreviated.
