@@ -1,0 +1,2 @@
+## 2024-05-23 - Created Journal\n**Learning:** Initialized.\n**Action:** Started journaling.
+## 2024-05-23 - Accessibility Label for Ad Tags\n**Learning:** VoiceOver on iOS will read abbreviated UI elements like 'AD' literally. To improve accessibility, they need a full-word `accessibilityLabel` like 'Advertisement', but it must be wrapped in `NSLocalizedString` for proper localization.\n**Action:** Add `NSLocalizedString("Advertisement", bundle: .module, comment: "Accessibility label for AD badge")` to `adTag.accessibilityLabel` across all native ad views.
