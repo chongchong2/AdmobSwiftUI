@@ -1,0 +1,3 @@
+## 2024-08-28 - Full-word VoiceOver Labels for Badges
+**Learning:** Short badge labels like "AD" are often spelled out as letters ("A-D") or skipped entirely by screen readers, degrading the accessibility experience.
+**Action:** Always provide full-word `accessibilityLabel` strings (e.g., "Advertisement") for abbreviated badges, and ensure they are wrapped in `NSLocalizedString` for proper localization support.
