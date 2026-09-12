@@ -1,0 +1,3 @@
+## 2024-05-20 - Accessible Abbreviated Tags
+**Learning:** Screen readers may incorrectly pronounce abbreviated UI badges (e.g., spelling out "A-D" or reading it strangely instead of "Advertisement").
+**Action:** Always provide full-word `accessibilityLabel` strings for abbreviated UI elements or badges to ensure proper screen reader pronunciation, and ensure they are wrapped in `NSLocalizedString` for proper localization.
