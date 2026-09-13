@@ -11,6 +11,17 @@
           }
         }
       }
+    },
+    "Advertisement" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\u5EE3\u544A"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
