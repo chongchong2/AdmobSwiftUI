@@ -1,0 +1,3 @@
+## 2024-10-24 - Screen Reader Pronunciation for Abbreviated Badges
+**Learning:** VoiceOver often mispronounces abbreviated UI elements or badges (like reading "AD" as "add"). This causes confusion for visually impaired users relying on badges to identify sponsored content.
+**Action:** Always provide full-word `accessibilityLabel` strings, wrapped in `NSLocalizedString`, for abbreviated UI elements or badges (e.g., "Advertisement" for "AD" badges) to ensure clear screen reader pronunciation.
