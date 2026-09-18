@@ -1,0 +1,3 @@
+## 2023-10-25 - VoiceOver Pronunciation for Ad Badges
+**Learning:** VoiceOver and other screen readers often mispronounce abbreviated UI elements like "AD" badges, reading them as single letters or unrelated words, which confuses users.
+**Action:** Always provide full-word `accessibilityLabel` strings (e.g., "Advertisement") wrapped in `NSLocalizedString` for proper localization when using abbreviated labels in UI badges.
