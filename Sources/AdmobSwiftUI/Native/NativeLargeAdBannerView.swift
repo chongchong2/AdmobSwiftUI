@@ -62,6 +62,8 @@ class NativeLargeAdBannerView: GADNativeAdView {
         adTag.layer.cornerRadius = 4
         adTag.clipsToBounds = true
         adTag.text = NSLocalizedString("AD", bundle: .module, comment: "Ad tag label")
+        adTag.isAccessibilityElement = true
+        adTag.accessibilityLabel = NSLocalizedString("Advertisement", bundle: .module, comment: "Full word for VoiceOver")
     }
     
     required init?(coder aDecoder: NSCoder) {

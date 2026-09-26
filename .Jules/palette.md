@@ -1,0 +1,3 @@
+## 2024-10-24 - Provide full-word accessibility labels for abbreviated badges
+**Learning:** VoiceOver reads abbreviated UI elements like "AD" badges literally ("A D"), which can be unclear. Native iOS accessibility requires providing full-word labels (e.g., "Advertisement") wrapped in `NSLocalizedString` for proper pronunciation and localization.
+**Action:** Always add `accessibilityLabel` with a full-word, localized string to abbreviated badges and set `isAccessibilityElement = true` so screen readers convey the clear meaning.
