@@ -1,0 +1,3 @@
+## 2024-10-30 - Ad Tag Accessibility Improvement
+**Learning:** Native ad tags implemented as UILabels ("AD") without `isAccessibilityElement = true` and a full-word `accessibilityLabel` will be read poorly by VoiceOver (e.g., spelled out "A-D" or ignored). For proper accessibility on iOS, non-interactive badges must be explicitly marked as accessibility elements with full-word labels like "Advertisement".
+**Action:** Always add `isAccessibilityElement = true` and `accessibilityLabel = NSLocalizedString("Advertisement", bundle: .module, comment: "...")` to UI components representing abbreviated badges.
