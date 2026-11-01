@@ -1,0 +1,3 @@
+## 2024-11-01 - VoiceOver Accessibility for Ad Badges
+**Learning:** Found that custom `UILabel` ad tags ("AD") are often not properly read by VoiceOver in iOS UIKit/SwiftUI environments. Abbreviated UI labels often need a full word (e.g., "Advertisement") for proper screen reader pronunciation. We must explicitly set `isAccessibilityElement = true` and provide a localized `accessibilityLabel`.
+**Action:** Enhance `adTag` accessibility in `NativeAdCardView`, `NativeAdBannerView`, and `NativeLargeAdBannerView` by making them accessibility elements and assigning `accessibilityLabel = NSLocalizedString("Advertisement", bundle: .module, comment: "Ad tag accessibility label")`.
