@@ -1,0 +1,3 @@
+## 2024-11-02 - Improved VoiceOver pronunciation for AD badges
+**Learning:** VoiceOver mispronounces abbreviated badges like "AD" (reading it as the word "add"). For screen reader clarity, abbreviated UI elements used as badges need full-word, localized accessibility labels (like "Advertisement") and `isAccessibilityElement = true` to be properly recognized when they are non-interactive UIKit elements like `UILabel`.
+**Action:** Always provide expanded, full-word `accessibilityLabel` strings (wrapped in `NSLocalizedString`) and set `isAccessibilityElement = true` for abbreviated UI badge elements to ensure proper screen reader pronunciation and recognition.
