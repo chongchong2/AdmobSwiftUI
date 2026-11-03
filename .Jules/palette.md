@@ -1,0 +1,3 @@
+## 2024-11-03 - Added Accessibility to AD Badges
+**Learning:** The "AD" badges lacked full-word pronunciation via VoiceOver on native iOS Ad components. VoiceOver would read them poorly without explicit `accessibilityLabel` handling. Even non-interactive structural elements like `UILabel` used as badges must set `isAccessibilityElement = true` explicitly to be announced by VoiceOver.
+**Action:** For all abbreviation badges (like "AD"), always set `isAccessibilityElement = true` and provide a fully expanded `accessibilityLabel` (e.g., "Advertisement"), properly localized via `NSLocalizedString`, to ensure screen readers announce them clearly.
