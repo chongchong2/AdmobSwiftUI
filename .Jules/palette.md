@@ -1,0 +1,3 @@
+## 2024-05-24 - VoiceOver Pronunciation for Ad Badges
+**Learning:** Screen readers like VoiceOver pronounce abbreviated labels like "AD" as individual letters ("A D") or confusing words, degrading the experience. Additionally, non-interactive badges like UILabels may be skipped by VoiceOver if `isAccessibilityElement` is not explicitly enabled in custom view hierarchies.
+**Action:** Always set `isAccessibilityElement = true` and provide a fully expanded `accessibilityLabel` (e.g., "Advertisement", wrapped in `NSLocalizedString`) for abbreviation-based UI badges to ensure natural pronunciation and localization for visually impaired users.
