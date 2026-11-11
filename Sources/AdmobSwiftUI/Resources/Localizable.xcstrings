@@ -1,17 +1,28 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "AD" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "廣告"
+  "sourceLanguage": "en",
+  "strings": {
+    "AD": {
+      "extractionState": "manual",
+      "localizations": {
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "廣告"
+          }
+        }
+      }
+    },
+    "Advertisement": {
+      "extractionState": "manual",
+      "localizations": {
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "廣告"
           }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }
